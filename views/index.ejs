@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank At Bowne</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/phosphor-icons"></script> 
+</head>
+<body>
+  <h1>Bank At Bowne</h1>
+  <h2>Checking Account</h2>
+  <span><%=user.name %></span>
+
+
+  <h3>Tansactions</h3>
+  <ul class="messages">
+  <% for(var i=0; i<transactions.length; i++) {%>
+    <li class="message">
+      <span><%=transactions[i].amount %></span>
+      <span><%=transactions[i].comment %></span>
+      <input type="text" name="" class="hide editComment" value="<%=transactions[i].comment %>">
+      <span><i data-id="<%=transactions[i]._id %>" class="ph ph-pencil-simple-line"></i></span>
+      <span class="hide"><i data-id="<%=transactions[i]._id %>" class="ph ph-floppy-disk"></i></span>
+      <span><i data-id="<%=transactions[i]._id %>" class="ph ph-trash"></i></span> 
+      
+    </li>
+  <% } %>
+  </ul>
+
+  
+
+  <h2>BALANCE:</h2>
+  <span><%=balance%></span>
+
+  <form>
+    <input id="inputAmount" type="text" placeholder="amount" name="amount">
+    <input id="inputComment" type="text" placeholder="Comment" name="comment">
+    <button><i id="deposit" class="ph ph-bank">Deposit</i></button>
+    <button> <i id="withdrawl" class="ph ph-money">Withdrawl</i> </button>
+  </form>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
+

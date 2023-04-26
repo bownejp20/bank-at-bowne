@@ -1,0 +1,15 @@
+body{
+  background: lightblue;
+}
+h3{
+  margin-top: 40px;
+}
+
+#withdrawl, #deposit{
+  margin-left:25px;
+}
+
+.hide{
+  display:none
+}
+
