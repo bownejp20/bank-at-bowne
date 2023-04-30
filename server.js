@@ -28,12 +28,6 @@ app.use(express.static('public'))
 app.get('/', (req, res) => {
   db.collection('transactions').find().toArray((err, result) => {
     if (err) return console.log(err)
-  //  const ttl = db.collection('transactions').aggregate([
-  //     {$group:{
-  //       _id: null, ttlAmount: {$sum:'$amount'}
-  //     }}
-  //   ])
-  //   console.log(ttl.ttlAmount)
 console.log(result)
     res.render('index.ejs', {
       user: {

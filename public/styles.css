@@ -1,8 +1,5 @@
 body{
-  background: lightblue;
-}
-h3{
-  margin-top: 40px;
+  background: rgb(219, 246, 255);
 }
 
 #withdrawl, #deposit{
@@ -12,4 +9,83 @@ h3{
 .hide{
   display:none
 }
+
+h1{
+  font-size:50px;
+  margin: 40px
+}
+
+.topMid{
+  margin:-20px 60px;
+}
+.bottom{
+  margin:80px 40px;
+}
+.checking{
+  background-color: rgb(54, 53, 53);
+  color:white;
+  border-radius: 15px;
+  padding:10px 20px
+}
+.user{
+  padding-left:25px;
+  font-size: 20px;
+  display: block;
+}
+
+.transactions{
+  margin:50px 0 10px 100px;
+  
+}
+h3{
+  margin: 20px
+}
+.size{
+  font-size: 20px;
+}
+.ph-bank, .ph-money{
+  margin:0;
+  font-size: 16px;
+}
+input{
+border-radius: 10px;
+font-size: 17px;
+padding:8px 10px;
+margin-top: 35px;
+}
+.balance{
+  font-size: 30px;
+  color: rgb(240, 182, 36);
+}
+
+button {
+  background-color: rgb(56, 50, 50);
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+button {
+  background-color: white; 
+  color:rgb(56, 50, 50); 
+  border: 2px solid rgb(56, 50, 50);
+}
+
+button:hover {
+  background-color: rgb(56, 50, 50);
+  color: white;
+}
+
+
+
+
+
 
